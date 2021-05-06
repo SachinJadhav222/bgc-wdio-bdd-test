@@ -1,0 +1,7 @@
+### vScode IDE ###
+.vscode
+### Node Modulles ###
+node_modules
+##secret##
+.tmp
+
