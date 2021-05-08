@@ -2,9 +2,9 @@ const reporter = require('cucumber-html-reporter');
 require('dotenv-flow').config();
 const options = {
     theme: 'bootstrap',
-    jsonFolder: "reports/",
-    jsonFile: 'reports/bbc-weather.json',
-    output: 'reports/ui-test-report.html',
+    jsonFolder: "reports/ui",
+    jsonFile: 'reports/ui/bbc-weather.json',
+    output: 'reports/ui/ui-test-report.html',
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
     launchReport: true,

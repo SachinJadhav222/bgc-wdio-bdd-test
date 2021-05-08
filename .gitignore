@@ -4,5 +4,7 @@
 node_modules
 ##reports##
 .tmp
+reports/ui
+reports/screenshots
 
 
