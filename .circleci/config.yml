@@ -45,7 +45,12 @@ jobs:
       - run:
           name: run ui tests
           command: npm run ui-test
-      # run api test  
+      # run api test 
+      - store_artifacts:
+          path: reports/ui/ui-test-report.html
+          destination: ui-test-report
+      - store_artifacts:
+          path: /tmp/artifacts  
   
   ui-test:
     docker:

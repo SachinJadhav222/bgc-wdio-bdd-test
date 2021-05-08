@@ -2,6 +2,7 @@
 .vscode
 ### Node Modulles ###
 node_modules
-##secret##
+##reports##
 .tmp
+
 
