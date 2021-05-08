@@ -2,6 +2,9 @@
 *Test Automation for UI test project for BGC  using WebdriverIO , cucumberjs   and other tools
  The framework is BDD enabled,Page Object Model,  using cucumber js to create feature file written in Gherkin Language*
 
+### CircleCI Pipeline Setup: 
+https://app.circleci.com/pipelines/github/SachinJadhav222/bgc-wdio-bdd-test 
+
 ### Folder Structure
 * [Project Root](./tree-md) : BGC-WDIO-BDD-TEST
     * [reports](./reports)  : Cucumber HTML reports
