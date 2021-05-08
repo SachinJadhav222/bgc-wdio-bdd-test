@@ -14,7 +14,7 @@
        
   * [README.md](./README.md)
 
-### *Setup Instuctions*
+### *Setup Instructions*
 set .env.local file at root , this file will overwrite local environment variables, We can add login credentials ,  access tokens etc to this file .  best practice, keep this file in .gitignore and do not commit to git for security reasons. 
 ### *For demo purpuse I have commited .env.local file to git*
 
