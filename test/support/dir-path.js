@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const featureFilePath = "./test/featureFiles/*.feature";
+const featureFilePath = "./test/features/*.feature";
 
 const screenshotPath = "./reports/screenshots";
 if (!fs.existsSync(screenshotPath)) {
