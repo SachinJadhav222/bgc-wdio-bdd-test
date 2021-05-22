@@ -1,10 +1,14 @@
 const { Given, When, Then, Before, After } = require("cucumber");
+const fs=require('fs');
 //const assert = require("cucumber-assert");
 //const locators = require("./../support/locator").locators;
 //const urls = require("./../config/urls");
 
 Given("I visit {string}", async function (URL) {
   await browser.url(this.getUrl[URL]);
+  //console.log('This in Given---->>>', this.attach)
+  //console.log('This in Given---->>>', this.log)
+  //this.log('This in Given---->>>', this.log)
 });
 
 Then("I entered {string} at {string}", function (expectedValue, selector) {
@@ -16,8 +20,17 @@ Then("I click on {string}", function (selector) {
  // browser.$(locators[selector]).click();
 });
 
+// Then("I shloud see Page title {string}", async function (expectedValue) {
+//   this.assert.equal(browser.getTitle(), expectedValue);
+//   const screenshot = await browser.takeScreenshot();
+//             // No access to World instance so the code below won't work
+//             this.attach(screenshot, "image/png");
+
+// });
+
 Then("I shloud see Page title {string}", function (expectedValue) {
   this.assert.equal(browser.getTitle(), expectedValue);
+    
 });
 
 Then(

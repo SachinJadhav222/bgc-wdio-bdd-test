@@ -7,7 +7,8 @@
     "reports": "node ./test/support/ui-report.js",
     "clean": "node ./test/support/clean-up.js",
     "ui-test": "./node_modules/.bin/wdio ./test/config/wdio.conf.js",
-    "test":"npm run clean && npm run ui-test && npm run reports"
+    "ui-test-new": "./node_modules/.bin/wdio ./test/config/wdio.conf.new.js",
+    "test":"npm run clean && npm run ui-test-new && npm run reports"
     
   },
   "author": "SACHIN JADHAV",
