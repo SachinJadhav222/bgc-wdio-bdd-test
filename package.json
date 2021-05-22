@@ -1,15 +1,11 @@
 {
-  
   "version": "1.0.0",
   "description": "Test automation framework using wdio and BDD",
   "scripts": {
-    
     "reports": "node ./test/support/ui-report.js",
     "clean": "node ./test/support/clean-up.js",
     "ui-test": "./node_modules/.bin/wdio ./test/config/wdio.conf.js",
-    "ui-test-new": "./node_modules/.bin/wdio ./test/config/wdio.conf.new.js",
-    "test":"npm run clean && npm run ui-test-new && npm run reports"
-    
+    "test": "npm run clean && npm run ui-test && npm run reports"
   },
   "author": "SACHIN JADHAV",
   "license": "ISC",
@@ -26,7 +22,6 @@
     "expect-webdriverio": "^2.0.1",
     "lodash": "^4.17.20",
     "wdio-json-reporter": "^1.4.0"
-    
   },
   "devDependencies": {
     "@wdio/cucumber-framework": "^5.23.0",
@@ -45,6 +40,5 @@
     "wdio-chromedriver-service": "^5.0.2",
     "wdio-cucumberjs-json-reporter": "^2.0.4",
     "wdio-json-cucumber-reporter": "^1.2.4"
-    
   }
 }
