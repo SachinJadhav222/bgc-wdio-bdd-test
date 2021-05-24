@@ -5,6 +5,8 @@
     "reports": "node ./test/support/ui-report.js",
     "clean": "node ./test/support/clean-up.js",
     "ui-test": "./node_modules/.bin/wdio ./test/config/wdio.conf.js",
+    "ui-test-remote": "./node_modules/.bin/wdio ./test/config/wdio.conf.remote.js",
+    "remote": "npm run clean && npm run ui-test-remote && npm run reports",
     "test": "npm run clean && npm run ui-test && npm run reports"
   },
   "author": "SACHIN JADHAV",
