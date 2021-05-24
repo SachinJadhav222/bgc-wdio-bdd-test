@@ -73,7 +73,11 @@ module.exports = {
   //   stepData,
   //   context
   // ) {
-  //   // console.log('After steps-->>')
+  //   console.log("After steps-->>");
+
+  //   // const screenshotStreem = browser.saveScreenshot();
+  //   // this.attach("Scroonshots for failed test result: ");
+  //   // this.attach(screenshotStreem, "image/png");
   // },
 
   /**
@@ -124,7 +128,7 @@ module.exports = {
    * @param {Array.<String>} specs List of spec file paths that ran
    */
   after: function (result, capabilities, specs) {
-    console.log(chalk.green("\n", "<<<---------->>>"));
+    console.log(chalk.green("\n", "<<<---------->>>",this));
     // console.log('After--->>> ', capabilities)
     // console.log('After--->>> ', specs)
   },
